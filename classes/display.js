@@ -8,7 +8,7 @@ const Display = function(canvas) {
 
     for (let index = map.length - 1; index > -1; -- index) {
 
-      let value         = map[index];
+      let value         = map[index] -1;
       let source_x      =           (value % image_columns) * tile_size;
       let source_y      = Math.floor(value / image_columns) * tile_size;
       let destination_x =           (index % map_columns  ) * tile_size;
