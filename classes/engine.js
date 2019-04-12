@@ -10,7 +10,7 @@ const Engine = function(time_step, update, render) {
     this.update = update;// The update function
     this.render = render;// The render function
   
-    this.run = function(time_stamp) {// This is one cycle of the game loop
+    this.run = function(time_stamp) {
   
       this.accumulated_time += time_stamp - this.time;
       this.time = time_stamp;
